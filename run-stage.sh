@@ -23,6 +23,7 @@ echo "---------------------
 Experiment information
 
 SIF_IMG: $SIF_IMG
+SIF_IMG_BASE: $SIF_IMG_BASE
 EXPERIMENT_NAME: $EXPERIMENT_NAME
 STAGE: $STAGE
 SUBJECT_ID: $SUBJECT_ID
@@ -51,8 +52,10 @@ antsRegistration () {
         --use-histogram-matching 0 \
         --winsorize-image-intensities [0.005,0.995] \
         --interpolation Linear \
+        --random-seed 123 \
         $cmd
 }
+
 antsApplyTransforms () {
     local cmd=$@
     echo $cmd
@@ -62,7 +65,7 @@ antsApplyTransforms () {
         -B $HOME/.cache/templateflow:/templateflow \
         ${SIF_IMG_BASE} antsApplyTransforms \
         -d 3 \
-        --random-seed 123 \
+        -r /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz \
         $cmd
 }
 
