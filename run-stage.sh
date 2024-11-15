@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ants_stage
-#SBATCH --time=12:00:00
+#SBATCH --time=UNLIMITED
 #SBATCH --mem=8G
 #SBATCH --cpus-per-task=1
 
@@ -35,6 +35,9 @@ INPUT_IMG: $INPUT_IMG
 DATA_DIR: $DATA_DIR
 OUTPUT_DIR: $OUTPUT_DIR
 OUTPUT_PREFIX: $OUTPUT_PREFIX
+THREAD: $APPTAINERENV_ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS
+FLOAT: $FLOAT
+VFC_BACKENDS: $VFC_BACKENDS
 ---------------------
 "
 
@@ -42,6 +45,7 @@ antsRegistration () {
     local cmd=$@
     echo $cmd
 
+    export APPTAINERENV_VFC_BACKENDS=$VFC_BACKENDS
     singularity exec --cleanenv \
         -B ${DATA_DIR}:${DATA_DIR} \
         -B $HOME/.cache/templateflow:/templateflow \
@@ -52,7 +56,8 @@ antsRegistration () {
         --use-histogram-matching 0 \
         --winsorize-image-intensities [0.005,0.995] \
         --interpolation Linear \
-        --random-seed 123 \
+        --random-seed $REPETITION_ID \
+        --float $FLOAT \
         $cmd
 }
 
