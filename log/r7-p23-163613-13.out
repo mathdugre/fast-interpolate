@@ -1,0 +1,1335 @@
+
+##########################
+# Experiment information #
+##########################
+
+EXPERIMENT_NAME: r7-p23
+VFC_BACKENDS: libinterflop_vprec.so --range-binary32=7 --precision-binary32=23 --range-binary64=7 --precision-binary64=23
+
+SIF_IMG: /mnt/lustre/mathdugre/containers/ants-vprec-no_metric.simg
+
+SUBJECT_ID: s030
+INPUT_IMG: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsBrainExtraction/sub-s030/BrainExtractionBrain.nii.gz
+OUTPUT_DIR: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030
+
+FIXED_IMG: /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz
+DATA_DIR: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513
+TEMPLATEFLOW_DIR: /home/mathdugre/.cache/templateflow
+ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS: 4
+##########################
+
+Info [verificarlo]: loaded backend libinterflop_vprec.so
+Info [interflop-vprec]: load backend with: 
+Info [interflop-vprec]: precision-binary32 = 23
+Info [interflop-vprec]: range-binary32 = 7
+Info [interflop-vprec]: precision-binary64 = 23
+Info [interflop-vprec]: range-binary64 = 7
+Info [interflop-vprec]: mode = ob
+Info [interflop-vprec]: error-mode = rel
+Info [interflop-vprec]: max-abs-error-exponent = -1022
+Info [interflop-vprec]: daz = false
+Info [interflop-vprec]: ftz = false
+Info [interflop-vprec]: 	instrument = none
+Info [interflop-vprec]: 	prec-input-file = (null)
+Info [interflop-vprec]: 	prec-output-file = (null)
+Info [interflop-vprec]: 	prec-log-file = (null)
+All_Command_lines_OK
+Using double precision for computations.
+=============================================================================
+The composite transform comprises the following transforms (in order): 
+  1. Center of mass alignment using fixed image: /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz and moving image: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsBrainExtraction/sub-s030/BrainExtractionBrain.nii.gz (type = Euler3DTransform)
+=============================================================================
+  number of levels = 4
+  number of levels = 4
+  number of levels = 4
+  fixed image: /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz
+  moving image: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsBrainExtraction/sub-s030/BrainExtractionBrain.nii.gz
+  fixed image: /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz
+  moving image: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsBrainExtraction/sub-s030/BrainExtractionBrain.nii.gz
+  fixed image: /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz
+  moving image: /mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsBrainExtraction/sub-s030/BrainExtractionBrain.nii.gz
+Dimension = 3
+Number of stages = 3
+Use histogram matching = false
+Winsorize image intensities = true
+  Lower quantile = 0.005
+  Upper quantile = 0.995
+
+
+Stage 1 State
+   Image metric = MattesMI
+     Fixed image = Image (0x357bb30)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 2385
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1996
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  Spacing: [1, 1, 1]
+  Origin: [96, 132, -78]
+  Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x35a36b0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1993
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f42931a9010
+      Container manages memory: true
+      Size: 8530021
+      Capacity: 8530021
+
+     Moving image = Image (0x35776c0)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 2386
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 2383
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  Spacing: [1, 1, 1]
+  Origin: [74.5645, 103.784, -122.692]
+  Direction: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  IndexToPointMatrix: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  PointToIndexMatrix: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  Inverse Direction: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x368b550)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 2380
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f428e6a8010
+      Container manages memory: true
+      Size: 9830400
+      Capacity: 9830400
+
+     Weighting = 1
+     Sampling strategy = regular
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 0.25
+   Transform = Rigid
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 0
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Stage 2 State
+   Image metric = MattesMI
+     Fixed image = Image (0x3598a30)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 3161
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 2772
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  Spacing: [1, 1, 1]
+  Origin: [96, 132, -78]
+  Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x3582c00)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 2769
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f428a593010
+      Container manages memory: true
+      Size: 8530021
+      Capacity: 8530021
+
+     Moving image = Image (0x3595a90)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 3162
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 3159
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  Spacing: [1, 1, 1]
+  Origin: [74.5645, 103.784, -122.692]
+  Direction: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  IndexToPointMatrix: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  PointToIndexMatrix: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  Inverse Direction: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x376b750)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 3156
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f4285a92010
+      Container manages memory: true
+      Size: 9830400
+      Capacity: 9830400
+
+     Weighting = 1
+     Sampling strategy = regular
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 0.25
+   Transform = Affine
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 0
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Stage 3 State
+   Image metric = CC
+     Fixed image = Image (0x359ef20)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 3937
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 3548
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [193, 229, 193]
+  Spacing: [1, 1, 1]
+  Origin: [96, 132, -78]
+  Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x37438f0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 3545
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f428197d010
+      Container manages memory: true
+      Size: 8530021
+      Capacity: 8530021
+
+     Moving image = Image (0x358b7c0)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 3938
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 3935
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [160, 240, 256]
+  Spacing: [1, 1, 1]
+  Origin: [74.5645, 103.784, -122.692]
+  Direction: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  IndexToPointMatrix: 
+-0.99889 0.0471064 0
+-0.0471064 -0.99889 0
+0 0 1
+
+  PointToIndexMatrix: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  Inverse Direction: 
+-0.99889 -0.0471064 0
+0.0471064 -0.99889 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x37137d0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 3932
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x7f427ce7c010
+      Container manages memory: true
+      Size: 9830400
+      Capacity: 9830400
+
+     Weighting = 1
+     Sampling strategy = none
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 1
+   Transform = SyN
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 3
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Registration using 3 total stages.
+
+Stage 0
+  iterations = 1000x500x250x100
+  convergence threshold = 1e-06
+  convergence window size = 10
+  number of levels = 4
+  using the Mattes MI metric (number of bins = 32, weight = 1, use gradient filter = 0)
+  preprocessing:  winsorizing the image intensities
+  Shrink factors (level 1 out of 4): [8, 8, 8]
+  Shrink factors (level 2 out of 4): [4, 4, 4]
+  Shrink factors (level 3 out of 4): [2, 2, 2]
+  Shrink factors (level 4 out of 4): [1, 1, 1]
+  smoothing sigmas per level: [3, 2, 1, 0]
+  regular sampling (percentage = 0.25)
+
+*** Running Euler3DTransform registration ***
+
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -5.885473551496e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -5.893569432983e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -5.924602427393e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -5.960521111754e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -5.964871274966e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -5.966248803137e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -5.970604375554e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -5.973146874778e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -5.999987399957e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -6.007285583156e-01, 1.214548945427e-03, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -6.024981555062e-01, 1.025535166264e-03, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -6.036948510643e-01, 8.544325828552e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -6.043621967616e-01, 7.669180631638e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -6.052534483956e-01, 7.738620042801e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -6.056988843187e-01, 7.366538047791e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -6.064336087920e-01, 6.628409028053e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -6.064334929441e-01, 5.493424832821e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -6.064341975311e-01, 4.036761820316e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -6.064353039524e-01, 3.035217523575e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -6.064374898725e-01, 2.018474042416e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -6.064409076213e-01, 1.306720077991e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0022.nii.gz
+2DIAGNOSTIC,    22, -6.064465037654e-01, 7.973238825798e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0023.nii.gz
+2DIAGNOSTIC,    23, -6.064546597841e-01, 3.966316580772e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0024.nii.gz
+2DIAGNOSTIC,    24, -6.064675415908e-01, 1.708418130875e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0025.nii.gz
+2DIAGNOSTIC,    25, -6.064838366485e-01, 3.181397914886e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0026.nii.gz
+2DIAGNOSTIC,    26, -6.065001450436e-01, 3.799796104431e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0027.nii.gz
+2DIAGNOSTIC,    27, -6.065135462908e-01, 4.377216100693e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0028.nii.gz
+2DIAGNOSTIC,    28, -6.065240974730e-01, 4.790723323822e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0029.nii.gz
+2DIAGNOSTIC,    29, -6.065341927094e-01, 5.021691322327e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0030.nii.gz
+2DIAGNOSTIC,    30, -6.064745619496e-01, 3.945082426071e-06, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level1_Iter0031.nii.gz
+2DIAGNOSTIC,    31, -6.064012229691e-01, 1.639127731323e-06, 0.0000e+00, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -5.048844612835e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -5.052257156789e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -5.058697602173e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -5.068755324661e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -5.077249834518e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -5.083194845239e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -5.094829576221e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -5.096862101319e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -5.098439029637e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -5.099238808092e-01, 7.346570491791e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -5.100465882326e-01, 5.905851721764e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -5.102875459017e-01, 4.443600773811e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -5.102860985889e-01, 3.075376152992e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -5.103704879437e-01, 2.062842249870e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -5.103825706830e-01, 1.320317387581e-04, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -5.103952890039e-01, 7.530301809311e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -5.103794833408e-01, 5.602836608887e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -5.103627396541e-01, 3.962218761444e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -5.103377081853e-01, 2.541020512581e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -5.103391881738e-01, 1.266226172447e-05, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level2_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -5.103305969291e-01, 2.976506948471e-06, 0.0000e+00, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -4.358832378338e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -4.360078335589e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -4.360897269188e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -4.360966012429e-01, 1.797693134862e+308, 0.0000e+00, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -4.360977485102e-01, 1.797693134862e+308, 1.2800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -4.360986290897e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -4.360979141304e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -4.360962695808e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -4.360964161744e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -4.360957794410e-01, 2.241879701614e-05, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -4.360944753836e-01, 8.277595043182e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -4.360952129595e-01, 2.704560756683e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -4.360959453780e-01, 2.115964889526e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -4.360948811939e-01, 1.892447471619e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -4.360936069757e-01, 1.750886440277e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -4.360934812944e-01, 1.668930053711e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -4.360937340336e-01, 1.631677150726e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -4.360936785187e-01, 1.534819602966e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -4.360933439066e-01, 1.482665538788e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -4.360930490756e-01, 1.419335603714e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -4.360929226444e-01, 1.326203346252e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0022.nii.gz
+2DIAGNOSTIC,    22, -4.360932707133e-01, 1.296401023865e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0023.nii.gz
+2DIAGNOSTIC,    23, -4.360934928416e-01, 1.307576894760e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0024.nii.gz
+2DIAGNOSTIC,    24, -4.360927908081e-01, 1.285225152969e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0025.nii.gz
+2DIAGNOSTIC,    25, -4.360920791033e-01, 1.203268766403e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0026.nii.gz
+2DIAGNOSTIC,    26, -4.360913629831e-01, 1.125037670135e-06, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level3_Iter0027.nii.gz
+2DIAGNOSTIC,    27, -4.360908471371e-01, 1.050531864166e-06, 1.2800e+02, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -3.968356994636e-01, 1.797693134862e+308, 2.5600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -3.969127597762e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -3.969393679687e-01, 1.797693134862e+308, 3.8400e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -3.969399531243e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -3.969394574263e-01, 1.797693134862e+308, 5.1200e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -3.969400759761e-01, 1.797693134862e+308, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -3.969397840876e-01, 1.797693134862e+308, 6.4000e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -3.969395388856e-01, 1.797693134862e+308, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -3.969395236444e-01, 1.797693134862e+308, 7.6800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -3.969393379258e-01, 1.227855682373e-05, 7.6800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -3.969392353856e-01, 4.589557647705e-06, 7.6800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -3.969392139294e-01, 2.577900886536e-06, 8.9600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -3.969390167604e-01, 2.332031726837e-06, 8.9600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -3.969388466696e-01, 2.168118953705e-06, 1.0240e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -3.969391163200e-01, 2.011656761169e-06, 1.0240e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -3.969392600873e-01, 1.914799213409e-06, 1.1520e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -3.969391736411e-01, 1.825392246246e-06, 1.1520e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -3.969392143441e-01, 1.747161149979e-06, 1.1520e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -3.969390452544e-01, 1.657754182816e-06, 1.2800e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -3.969389726210e-01, 1.586973667145e-06, 1.2800e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -3.969390687725e-01, 1.512467861176e-06, 1.4080e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0022.nii.gz
+2DIAGNOSTIC,    22, -3.969391004290e-01, 1.449137926102e-06, 1.4080e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0023.nii.gz
+2DIAGNOSTIC,    23, -3.969390299189e-01, 1.378357410431e-06, 1.5360e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0024.nii.gz
+2DIAGNOSTIC,    24, -3.969390294553e-01, 1.315027475357e-06, 1.5360e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0025.nii.gz
+2DIAGNOSTIC,    25, -3.969390348088e-01, 1.262873411179e-06, 1.6640e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0026.nii.gz
+2DIAGNOSTIC,    26, -3.969390342033e-01, 1.218169927597e-06, 1.6640e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0027.nii.gz
+2DIAGNOSTIC,    27, -3.969390335233e-01, 1.173466444016e-06, 1.7920e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0028.nii.gz
+2DIAGNOSTIC,    28, -3.969390335233e-01, 1.136213541031e-06, 1.7920e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0029.nii.gz
+2DIAGNOSTIC,    29, -3.969390326775e-01, 1.095235347748e-06, 1.7920e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0030.nii.gz
+2DIAGNOSTIC,    30, -3.969390242688e-01, 1.057982444763e-06, 1.9200e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage1_level4_Iter0031.nii.gz
+2DIAGNOSTIC,    31, -3.969390242382e-01, 1.024454832077e-06, 1.9200e+03, 0.0000e+00, 
+  Elapsed time (stage 0): 2.3040e+03
+
+
+Stage 1
+  iterations = 1000x500x250x100
+  convergence threshold = 1.0000e-06
+  convergence window size = 10
+  number of levels = 4
+  using the Mattes MI metric (number of bins = 32, weight = 1.0000e+00, use gradient filter = 0)
+  preprocessing:  winsorizing the image intensities
+  Shrink factors (level 1 out of 4): [8, 8, 8]
+  Shrink factors (level 2 out of 4): [4, 4, 4]
+  Shrink factors (level 3 out of 4): [2, 2, 2]
+  Shrink factors (level 4 out of 4): [1, 1, 1]
+  smoothing sigmas per level: [3, 2, 1, 0]
+  regular sampling (percentage = 2.5000e-01)
+
+*** Running AffineTransform registration ***
+
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -6.038511710786e-01, 1.797693134862e+308, 1.2800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -6.063383471396e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -6.109381271761e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -6.173635349648e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -6.281743794941e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -6.454560005079e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -6.758796738393e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -7.484384369500e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -8.415452199699e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -8.702307859678e-01, 2.484450489283e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -8.808084925631e-01, 2.646267414093e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -8.969807726749e-01, 2.602090686560e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -9.043546990018e-01, 2.365651726723e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -9.044271707698e-01, 1.972751319408e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -9.042865072267e-01, 1.493072509766e-02, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -9.041329210756e-01, 9.918034076691e-03, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -9.042342624998e-01, 5.333520472050e-03, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -9.041798948650e-01, 2.270184457302e-03, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -9.041102000809e-01, 1.128114759922e-03, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -9.040895508223e-01, 5.263425409794e-04, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level1_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -9.041443985602e-01, 1.148991286755e-04, 1.2800e+02, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -7.467513204018e-01, 1.797693134862e+308, 2.5600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -7.472634195330e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -7.475611812044e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -7.478704287218e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -7.481905722838e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -7.484709284308e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -7.484980693433e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -7.485124424992e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -7.485088413741e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -7.485329666225e-01, 1.504942774773e-04, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -7.485300575328e-01, 9.679049253464e-05, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -7.485336679942e-01, 5.993247032166e-05, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -7.485245485438e-01, 3.198534250259e-05, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -7.485305616056e-01, 1.377612352371e-05, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -7.485224756940e-01, 4.641711711884e-06, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -7.485001725987e-01, 2.540647983551e-06, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level2_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -7.485018746007e-01, 1.277774572372e-06, 2.5600e+02, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -6.228995305212e-01, 1.797693134862e+308, 3.8400e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -6.236019840874e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -6.244021395901e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -6.253833318395e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -6.263175471565e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -6.264681721755e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -6.266375211430e-01, 1.797693134862e+308, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -6.266336496549e-01, 1.797693134862e+308, 5.1200e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -6.266362242672e-01, 1.797693134862e+308, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -6.266367953685e-01, 3.923326730728e-04, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -6.266367882161e-01, 2.523958683014e-04, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -6.266352385221e-01, 1.400485634804e-04, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -6.266331165980e-01, 5.994737148285e-05, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -6.266314384579e-01, 1.712888479233e-05, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -6.266320899403e-01, 6.891787052155e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -6.266318333677e-01, 1.646578311920e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -6.266322915965e-01, 1.568347215652e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -6.266334272928e-01, 1.471489667892e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -6.266328783074e-01, 1.449137926102e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -6.266310955576e-01, 1.426786184311e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -6.266279165264e-01, 1.352280378342e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0022.nii.gz
+2DIAGNOSTIC,    22, -6.266259907292e-01, 1.244246959686e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level3_Iter0023.nii.gz
+2DIAGNOSTIC,    23, -6.266242036061e-01, 1.069158315659e-06, 5.1200e+02, 0.0000e+00, 
+DIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0001.nii.gz
+2DIAGNOSTIC,     1, -5.528752342873e-01, 1.797693134862e+308, 6.4000e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0002.nii.gz
+2DIAGNOSTIC,     2, -5.532494658657e-01, 1.797693134862e+308, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0003.nii.gz
+2DIAGNOSTIC,     3, -5.537597440041e-01, 1.797693134862e+308, 7.6800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0004.nii.gz
+2DIAGNOSTIC,     4, -5.545259600068e-01, 1.797693134862e+308, 7.6800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0005.nii.gz
+2DIAGNOSTIC,     5, -5.554661605056e-01, 1.797693134862e+308, 8.9600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0006.nii.gz
+2DIAGNOSTIC,     6, -5.554774559556e-01, 1.797693134862e+308, 1.0240e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0007.nii.gz
+2DIAGNOSTIC,     7, -5.554743969427e-01, 1.797693134862e+308, 1.0240e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0008.nii.gz
+2DIAGNOSTIC,     8, -5.554741514034e-01, 1.797693134862e+308, 1.1520e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0009.nii.gz
+2DIAGNOSTIC,     9, -5.554734582307e-01, 1.797693134862e+308, 1.1520e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0010.nii.gz
+2DIAGNOSTIC,    10, -5.554728603040e-01, 3.202632069588e-04, 1.2800e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0011.nii.gz
+2DIAGNOSTIC,    11, -5.554727467642e-01, 2.072602510452e-04, 1.4080e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0012.nii.gz
+2DIAGNOSTIC,    12, -5.554726765560e-01, 1.111999154091e-04, 1.4080e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0013.nii.gz
+2DIAGNOSTIC,    13, -5.554725746122e-01, 3.979355096817e-05, 1.5360e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0014.nii.gz
+2DIAGNOSTIC,    14, -5.554724555486e-01, 2.272427082062e-06, 1.5360e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0015.nii.gz
+2DIAGNOSTIC,    15, -5.554723341069e-01, 1.840293407440e-06, 1.5360e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0016.nii.gz
+2DIAGNOSTIC,    16, -5.554723755127e-01, 1.840293407440e-06, 1.6640e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0017.nii.gz
+2DIAGNOSTIC,    17, -5.554722822993e-01, 1.773238182068e-06, 1.6640e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0018.nii.gz
+2DIAGNOSTIC,    18, -5.554723208984e-01, 1.713633537292e-06, 1.7920e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0019.nii.gz
+2DIAGNOSTIC,    19, -5.554723594556e-01, 1.639127731323e-06, 1.7920e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0020.nii.gz
+2DIAGNOSTIC,    20, -5.554721211063e-01, 1.553446054459e-06, 1.9200e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0021.nii.gz
+2DIAGNOSTIC,    21, -5.554720630167e-01, 1.490116119385e-06, 1.9200e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0022.nii.gz
+2DIAGNOSTIC,    22, -5.554719811850e-01, 1.419335603714e-06, 2.0480e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0023.nii.gz
+2DIAGNOSTIC,    23, -5.554718994793e-01, 1.359730958939e-06, 2.0480e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0024.nii.gz
+2DIAGNOSTIC,    24, -5.554719061508e-01, 1.292675733566e-06, 2.1760e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0025.nii.gz
+2DIAGNOSTIC,    25, -5.554720403396e-01, 1.251697540283e-06, 2.1760e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0026.nii.gz
+2DIAGNOSTIC,    26, -5.554717418609e-01, 1.199543476105e-06, 2.3040e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0027.nii.gz
+2DIAGNOSTIC,    27, -5.554716175085e-01, 1.151114702225e-06, 2.3040e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0028.nii.gz
+2DIAGNOSTIC,    28, -5.554714247351e-01, 1.102685928345e-06, 2.4320e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0029.nii.gz
+2DIAGNOSTIC,    29, -5.554714043006e-01, 1.061707735062e-06, 2.4320e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage2_level4_Iter0030.nii.gz
+2DIAGNOSTIC,    30, -5.554713597167e-01, 1.031905412674e-06, 2.4320e+03, 0.0000e+00, 
+  Elapsed time (stage 1): 2.8160e+03
+
+
+Stage 2
+  iterations = 100x70x50x20
+  convergence threshold = 1.0000e-06
+  convergence window size = 10
+  number of levels = 4
+  using the CC metric (radius = 4, weight = 1.0000e+00, use gradient filter = 0)
+  preprocessing:  winsorizing the image intensities
+  Shrink factors (level 1 out of 4): [8, 8, 8]
+  Shrink factors (level 2 out of 4): [4, 4, 4]
+  Shrink factors (level 3 out of 4): [2, 2, 2]
+  Shrink factors (level 4 out of 4): [1, 1, 1]
+  smoothing sigmas per level: [3, 2, 1, 0]
+  Using default NONE metricSamplingStrategy 
+
+*** Running SyN registration (varianceForUpdateField = 3.0000e+00, varianceForTotalField = 0.0000e+00) ***
+
+XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0001.nii.gz
+1DIAGNOSTIC,     1, -9.365399479866e-01, 1.797693134862e+308, 1.2800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0002.nii.gz
+1DIAGNOSTIC,     2, -9.453907012939e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0003.nii.gz
+1DIAGNOSTIC,     3, -9.526925683022e-01, 1.797693134862e+308, 1.2800e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0004.nii.gz
+1DIAGNOSTIC,     4, -9.568470716476e-01, 1.797693134862e+308, 2.5600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0005.nii.gz
+1DIAGNOSTIC,     5, -9.596194624901e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0006.nii.gz
+1DIAGNOSTIC,     6, -9.626947641373e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0007.nii.gz
+1DIAGNOSTIC,     7, -9.659224748611e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0008.nii.gz
+1DIAGNOSTIC,     8, -9.684177637100e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0009.nii.gz
+1DIAGNOSTIC,     9, -9.705490469933e-01, 1.797693134862e+308, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0010.nii.gz
+1DIAGNOSTIC,    10, -9.719770550728e-01, 2.172432839870e-03, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0011.nii.gz
+1DIAGNOSTIC,    11, -9.724971652031e-01, 1.569204032421e-03, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0012.nii.gz
+1DIAGNOSTIC,    12, -9.729475975037e-01, 1.152761280537e-03, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0013.nii.gz
+1DIAGNOSTIC,    13, -9.734258055687e-01, 8.722394704819e-04, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0014.nii.gz
+1DIAGNOSTIC,    14, -9.736072421074e-01, 6.438270211220e-04, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0015.nii.gz
+1DIAGNOSTIC,    15, -9.741780757904e-01, 4.526898264885e-04, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0016.nii.gz
+1DIAGNOSTIC,    16, -9.742605090141e-01, 3.016293048859e-04, 2.5600e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0017.nii.gz
+1DIAGNOSTIC,    17, -9.748125672340e-01, 2.059489488602e-04, 3.8400e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0018.nii.gz
+1DIAGNOSTIC,    18, -9.748263955116e-01, 1.423619687557e-04, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0019.nii.gz
+1DIAGNOSTIC,    19, -9.752824306488e-01, 1.121275126934e-04, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0020.nii.gz
+1DIAGNOSTIC,    20, -9.752486348152e-01, 9.497255086899e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0021.nii.gz
+1DIAGNOSTIC,    21, -9.756364822388e-01, 8.342415094376e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0022.nii.gz
+1DIAGNOSTIC,    22, -9.755714535713e-01, 7.021799683571e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0023.nii.gz
+1DIAGNOSTIC,    23, -9.759085774422e-01, 6.221979856491e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0024.nii.gz
+1DIAGNOSTIC,    24, -9.758213162422e-01, 5.011633038521e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0025.nii.gz
+1DIAGNOSTIC,    25, -9.761738777161e-01, 4.534050822258e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0026.nii.gz
+1DIAGNOSTIC,    26, -9.760706424713e-01, 3.633648157120e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0027.nii.gz
+1DIAGNOSTIC,    27, -9.763466119766e-01, 3.377348184586e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0028.nii.gz
+1DIAGNOSTIC,    28, -9.762318134308e-01, 2.711638808250e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0029.nii.gz
+1DIAGNOSTIC,    29, -9.764868617058e-01, 2.573803067207e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0030.nii.gz
+1DIAGNOSTIC,    30, -9.763634800911e-01, 2.042576670647e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0031.nii.gz
+1DIAGNOSTIC,    31, -9.766009449959e-01, 1.962482929230e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0032.nii.gz
+1DIAGNOSTIC,    32, -9.764690995216e-01, 1.519173383713e-05, 3.8400e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0033.nii.gz
+1DIAGNOSTIC,    33, -9.767330288887e-01, 1.509487628937e-05, 5.1200e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0034.nii.gz
+1DIAGNOSTIC,    34, -9.765946865082e-01, 1.160055398941e-05, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0035.nii.gz
+1DIAGNOSTIC,    35, -9.768158793449e-01, 1.216493546963e-05, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0036.nii.gz
+1DIAGNOSTIC,    36, -9.766731858253e-01, 9.533017873764e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0037.nii.gz
+1DIAGNOSTIC,    37, -9.768833518028e-01, 1.014210283756e-05, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0038.nii.gz
+1DIAGNOSTIC,    38, -9.767383337021e-01, 7.733702659607e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0039.nii.gz
+1DIAGNOSTIC,    39, -9.769387841225e-01, 8.288770914078e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0040.nii.gz
+1DIAGNOSTIC,    40, -9.767909646034e-01, 6.033107638359e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0041.nii.gz
+1DIAGNOSTIC,    41, -9.769828319550e-01, 6.515532732010e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0042.nii.gz
+1DIAGNOSTIC,    42, -9.768331646919e-01, 4.393979907036e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0043.nii.gz
+1DIAGNOSTIC,    43, -9.770184755325e-01, 5.139037966728e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0044.nii.gz
+1DIAGNOSTIC,    44, -9.768669009209e-01, 3.432855010033e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0045.nii.gz
+1DIAGNOSTIC,    45, -9.770483374596e-01, 4.218891263008e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0046.nii.gz
+1DIAGNOSTIC,    46, -9.768962264061e-01, 2.695247530937e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0047.nii.gz
+1DIAGNOSTIC,    47, -9.770753979683e-01, 3.525987267494e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0048.nii.gz
+1DIAGNOSTIC,    48, -9.769238829613e-01, 2.177432179451e-06, 5.1200e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0049.nii.gz
+1DIAGNOSTIC,    49, -9.770994782448e-01, 3.037974238396e-06, 6.4000e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0050.nii.gz
+1DIAGNOSTIC,    50, -9.769480228424e-01, 1.829117536545e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0051.nii.gz
+1DIAGNOSTIC,    51, -9.771208763123e-01, 2.697110176086e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0052.nii.gz
+1DIAGNOSTIC,    52, -9.769692420959e-01, 1.577660441399e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0053.nii.gz
+1DIAGNOSTIC,    53, -9.771397709846e-01, 2.427026629448e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0054.nii.gz
+1DIAGNOSTIC,    54, -9.769894480705e-01, 1.383945345879e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0055.nii.gz
+1DIAGNOSTIC,    55, -9.772037267685e-01, 2.445653080940e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0056.nii.gz
+1DIAGNOSTIC,    56, -9.770545959473e-01, 1.668930053711e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0057.nii.gz
+1DIAGNOSTIC,    57, -9.772198200226e-01, 2.624467015266e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0058.nii.gz
+1DIAGNOSTIC,    58, -9.770717620850e-01, 1.799315214157e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0059.nii.gz
+1DIAGNOSTIC,    59, -9.772337079048e-01, 2.590939402580e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0060.nii.gz
+1DIAGNOSTIC,    60, -9.770861268044e-01, 1.659616827965e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0061.nii.gz
+1DIAGNOSTIC,    61, -9.772452116013e-01, 2.276152372360e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0062.nii.gz
+1DIAGNOSTIC,    62, -9.770985245705e-01, 1.261010766029e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0063.nii.gz
+1DIAGNOSTIC,    63, -9.772573709488e-01, 1.778826117516e-06, 6.4000e+02, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level1_Iter0064.nii.gz
+1DIAGNOSTIC,    64, -9.771122932434e-01, 7.580965757370e-07, 6.4000e+02, 0.0000e+00, 
+XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0001.nii.gz
+1DIAGNOSTIC,     1, -9.196139574051e-01, 1.797693134862e+308, 7.6800e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0002.nii.gz
+1DIAGNOSTIC,     2, -9.222444295883e-01, 1.797693134862e+308, 8.9600e+02, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0003.nii.gz
+1DIAGNOSTIC,     3, -9.249156713486e-01, 1.797693134862e+308, 1.0240e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0004.nii.gz
+1DIAGNOSTIC,     4, -9.271658062935e-01, 1.797693134862e+308, 1.1520e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0005.nii.gz
+1DIAGNOSTIC,     5, -9.290035367012e-01, 1.797693134862e+308, 1.1520e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0006.nii.gz
+1DIAGNOSTIC,     6, -9.306046962738e-01, 1.797693134862e+308, 1.1520e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0007.nii.gz
+1DIAGNOSTIC,     7, -9.320155382156e-01, 1.797693134862e+308, 1.2800e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0008.nii.gz
+1DIAGNOSTIC,     8, -9.332619905472e-01, 1.797693134862e+308, 1.4080e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0009.nii.gz
+1DIAGNOSTIC,     9, -9.342428445816e-01, 1.797693134862e+308, 1.5360e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0010.nii.gz
+1DIAGNOSTIC,    10, -9.351089596748e-01, 1.054741442204e-03, 1.5360e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0011.nii.gz
+1DIAGNOSTIC,    11, -9.358887076378e-01, 8.295997977257e-04, 1.5360e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0012.nii.gz
+1DIAGNOSTIC,    12, -9.365938305855e-01, 6.517618894577e-04, 1.6640e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0013.nii.gz
+1DIAGNOSTIC,    13, -9.372295141220e-01, 5.195438861847e-04, 1.7920e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0014.nii.gz
+1DIAGNOSTIC,    14, -9.378052353859e-01, 4.202947020531e-04, 1.9200e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0015.nii.gz
+1DIAGNOSTIC,    15, -9.383321404457e-01, 3.437623381615e-04, 1.9200e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0016.nii.gz
+1DIAGNOSTIC,    16, -9.388169646263e-01, 2.847909927368e-04, 1.9200e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0017.nii.gz
+1DIAGNOSTIC,    17, -9.392564296722e-01, 2.394914627075e-04, 2.0480e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0018.nii.gz
+1DIAGNOSTIC,    18, -9.396561980247e-01, 2.048686146736e-04, 2.1760e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0019.nii.gz
+1DIAGNOSTIC,    19, -9.400236606598e-01, 1.764446496964e-04, 2.3040e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0020.nii.gz
+1DIAGNOSTIC,    20, -9.403581023216e-01, 1.526996493340e-04, 2.3040e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0021.nii.gz
+1DIAGNOSTIC,    21, -9.406562447548e-01, 1.325793564320e-04, 2.3040e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0022.nii.gz
+1DIAGNOSTIC,    22, -9.409307837486e-01, 1.154392957687e-04, 2.4320e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0023.nii.gz
+1DIAGNOSTIC,    23, -9.411805868149e-01, 1.007057726383e-04, 2.5600e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0024.nii.gz
+1DIAGNOSTIC,    24, -9.413988590240e-01, 8.784234523773e-05, 2.6880e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0025.nii.gz
+1DIAGNOSTIC,    25, -9.415970444679e-01, 7.659196853638e-05, 2.6880e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0026.nii.gz
+1DIAGNOSTIC,    26, -9.417727589607e-01, 6.674602627754e-05, 2.6880e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0027.nii.gz
+1DIAGNOSTIC,    27, -9.419330358505e-01, 5.814433097839e-05, 2.8160e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0028.nii.gz
+1DIAGNOSTIC,    28, -9.420796036720e-01, 5.063042044640e-05, 2.9440e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0029.nii.gz
+1DIAGNOSTIC,    29, -9.422122240067e-01, 4.414096474648e-05, 3.0720e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0030.nii.gz
+1DIAGNOSTIC,    30, -9.423318505287e-01, 3.854930400848e-05, 3.0720e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0031.nii.gz
+1DIAGNOSTIC,    31, -9.424436092377e-01, 3.374740481377e-05, 3.0720e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0032.nii.gz
+1DIAGNOSTIC,    32, -9.425378441811e-01, 2.959370613098e-05, 3.2000e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0033.nii.gz
+1DIAGNOSTIC,    33, -9.426251053810e-01, 2.604350447655e-05, 3.3280e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0034.nii.gz
+1DIAGNOSTIC,    34, -9.426982998848e-01, 2.288445830345e-05, 3.4560e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0035.nii.gz
+1DIAGNOSTIC,    35, -9.427735805511e-01, 2.017244696617e-05, 3.4560e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0036.nii.gz
+1DIAGNOSTIC,    36, -9.428409934044e-01, 1.780502498150e-05, 3.4560e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0037.nii.gz
+1DIAGNOSTIC,    37, -9.428947567940e-01, 1.567974686623e-05, 3.5840e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0038.nii.gz
+1DIAGNOSTIC,    38, -9.429447054863e-01, 1.380592584610e-05, 3.7120e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0039.nii.gz
+1DIAGNOSTIC,    39, -9.429886937141e-01, 1.215562224388e-05, 3.8400e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0040.nii.gz
+1DIAGNOSTIC,    40, -9.430263638496e-01, 1.067481935024e-05, 3.8400e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0041.nii.gz
+1DIAGNOSTIC,    41, -9.430556297302e-01, 9.361654520035e-06, 3.8400e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0042.nii.gz
+1DIAGNOSTIC,    42, -9.430832266808e-01, 8.152797818184e-06, 3.9680e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0043.nii.gz
+1DIAGNOSTIC,    43, -9.431027173996e-01, 7.044523954391e-06, 4.0960e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0044.nii.gz
+1DIAGNOSTIC,    44, -9.431181550026e-01, 5.982816219330e-06, 4.2240e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0045.nii.gz
+1DIAGNOSTIC,    45, -9.431321024895e-01, 5.058944225311e-06, 4.2240e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0046.nii.gz
+1DIAGNOSTIC,    46, -9.431403279305e-01, 4.252418875694e-06, 4.2240e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0047.nii.gz
+1DIAGNOSTIC,    47, -9.431471824646e-01, 3.520399332047e-06, 4.3520e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0048.nii.gz
+1DIAGNOSTIC,    48, -9.431524872780e-01, 2.896413207054e-06, 4.4800e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0049.nii.gz
+1DIAGNOSTIC,    49, -9.431502223015e-01, 2.339482307434e-06, 4.6080e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0050.nii.gz
+1DIAGNOSTIC,    50, -9.431490898132e-01, 1.862645149231e-06, 4.6080e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0051.nii.gz
+1DIAGNOSTIC,    51, -9.431437849998e-01, 1.423060894012e-06, 4.6080e+03, 0.0000e+00, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0052.nii.gz
+1DIAGNOSTIC,    52, -9.431365132332e-01, 1.043081283569e-06, 4.7360e+03, 1.2800e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level2_Iter0053.nii.gz
+1DIAGNOSTIC,    53, -9.431282281876e-01, 7.022172212601e-07, 4.8640e+03, 1.2800e+02, 
+XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0001.nii.gz
+1DIAGNOSTIC,     1, -8.921339511871e-01, 1.797693134862e+308, 5.5040e+03, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0002.nii.gz
+1DIAGNOSTIC,     2, -8.932489156723e-01, 1.797693134862e+308, 6.1440e+03, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0003.nii.gz
+1DIAGNOSTIC,     3, -8.950394988060e-01, 1.797693134862e+308, 6.7840e+03, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0004.nii.gz
+1DIAGNOSTIC,     4, -8.968660831451e-01, 1.797693134862e+308, 7.4240e+03, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0005.nii.gz
+1DIAGNOSTIC,     5, -8.986276984215e-01, 1.797693134862e+308, 7.9360e+03, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0006.nii.gz
+1DIAGNOSTIC,     6, -9.005129933357e-01, 1.797693134862e+308, 8.4480e+03, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0007.nii.gz
+1DIAGNOSTIC,     7, -9.025219678879e-01, 1.797693134862e+308, 8.9600e+03, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0008.nii.gz
+1DIAGNOSTIC,     8, -9.042913317680e-01, 1.797693134862e+308, 9.6000e+03, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0009.nii.gz
+1DIAGNOSTIC,     9, -9.061462283134e-01, 1.797693134862e+308, 1.0240e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0010.nii.gz
+1DIAGNOSTIC,    10, -9.075953960419e-01, 1.145981252193e-03, 1.0880e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0011.nii.gz
+1DIAGNOSTIC,    11, -9.089406132698e-01, 1.040145754814e-03, 1.1520e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0012.nii.gz
+1DIAGNOSTIC,    12, -9.101902842522e-01, 9.201616048813e-04, 1.2160e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0013.nii.gz
+1DIAGNOSTIC,    13, -9.113596677780e-01, 8.067041635513e-04, 1.2800e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0014.nii.gz
+1DIAGNOSTIC,    14, -9.124480485916e-01, 7.013380527496e-04, 1.3440e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0015.nii.gz
+1DIAGNOSTIC,    15, -9.132994413376e-01, 6.004273891449e-04, 1.4080e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0016.nii.gz
+1DIAGNOSTIC,    16, -9.141047000885e-01, 5.096271634102e-04, 1.4720e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0017.nii.gz
+1DIAGNOSTIC,    17, -9.148613214493e-01, 4.334598779678e-04, 1.5360e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0018.nii.gz
+1DIAGNOSTIC,    18, -9.155707955360e-01, 3.684982657433e-04, 1.6000e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0019.nii.gz
+1DIAGNOSTIC,    19, -9.162369966507e-01, 3.176257014275e-04, 1.6640e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0020.nii.gz
+1DIAGNOSTIC,    20, -9.168567061424e-01, 2.745911478996e-04, 1.7280e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0021.nii.gz
+1DIAGNOSTIC,    21, -9.174362421036e-01, 2.386607229710e-04, 1.7920e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0022.nii.gz
+1DIAGNOSTIC,    22, -9.179902076721e-01, 2.092570066452e-04, 1.8432e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0023.nii.gz
+1DIAGNOSTIC,    23, -9.185228943825e-01, 1.858361065388e-04, 1.8944e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0024.nii.gz
+1DIAGNOSTIC,    24, -9.190373420715e-01, 1.677609980106e-04, 1.9456e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0025.nii.gz
+1DIAGNOSTIC,    25, -9.195344448090e-01, 1.521743834019e-04, 1.9968e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0026.nii.gz
+1DIAGNOSTIC,    26, -9.200145602226e-01, 1.388788223267e-04, 2.0608e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0027.nii.gz
+1DIAGNOSTIC,    27, -9.204787611961e-01, 1.275725662708e-04, 2.1248e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0028.nii.gz
+1DIAGNOSTIC,    28, -9.209198951721e-01, 1.178346574306e-04, 2.1888e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0029.nii.gz
+1DIAGNOSTIC,    29, -9.213420152664e-01, 1.093186438084e-04, 2.2528e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0030.nii.gz
+1DIAGNOSTIC,    30, -9.217355251312e-01, 1.015625894070e-04, 2.3168e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0031.nii.gz
+1DIAGNOSTIC,    31, -9.221123456955e-01, 9.430199861526e-05, 2.3808e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0032.nii.gz
+1DIAGNOSTIC,    32, -9.224685430527e-01, 8.741766214371e-05, 2.4448e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0033.nii.gz
+1DIAGNOSTIC,    33, -9.228118062019e-01, 8.093565702438e-05, 2.5088e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0034.nii.gz
+1DIAGNOSTIC,    34, -9.231423735619e-01, 7.488951086998e-05, 2.5728e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0035.nii.gz
+1DIAGNOSTIC,    35, -9.234546422958e-01, 6.928294897079e-05, 2.6368e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0036.nii.gz
+1DIAGNOSTIC,    36, -9.237430095673e-01, 6.405264139175e-05, 2.7008e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0037.nii.gz
+1DIAGNOSTIC,    37, -9.240124225616e-01, 5.919858813286e-05, 2.7520e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0038.nii.gz
+1DIAGNOSTIC,    38, -9.242681264877e-01, 5.467608571053e-05, 2.8032e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0039.nii.gz
+1DIAGNOSTIC,    39, -9.245110750198e-01, 5.050376057625e-05, 2.8672e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0040.nii.gz
+1DIAGNOSTIC,    40, -9.247408509254e-01, 4.658289253712e-05, 2.9184e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0041.nii.gz
+1DIAGNOSTIC,    41, -9.249553680420e-01, 4.291720688343e-05, 2.9696e+04, 5.1200e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0042.nii.gz
+1DIAGNOSTIC,    42, -9.251562356949e-01, 3.947876393795e-05, 3.0336e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0043.nii.gz
+1DIAGNOSTIC,    43, -9.253501296043e-01, 3.633275628090e-05, 3.0976e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0044.nii.gz
+1DIAGNOSTIC,    44, -9.255385398865e-01, 3.354810178280e-05, 3.1616e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0045.nii.gz
+1DIAGNOSTIC,    45, -9.257275462151e-01, 3.117136657238e-05, 3.2256e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0046.nii.gz
+1DIAGNOSTIC,    46, -9.259135723114e-01, 2.914294600487e-05, 3.2896e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0047.nii.gz
+1DIAGNOSTIC,    47, -9.261013269424e-01, 2.746470272541e-05, 3.3536e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0048.nii.gz
+1DIAGNOSTIC,    48, -9.262917041779e-01, 2.613291144371e-05, 3.4176e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0049.nii.gz
+1DIAGNOSTIC,    49, -9.264887571335e-01, 2.517364919186e-05, 3.4816e+04, 6.4000e+02, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level3_Iter0050.nii.gz
+1DIAGNOSTIC,    50, -9.266914725304e-01, 2.455338835716e-05, 3.5456e+04, 6.4000e+02, 
+XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0001.nii.gz
+1DIAGNOSTIC,     1, -8.760736584663e-01, 1.797693134862e+308, 4.0448e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0002.nii.gz
+1DIAGNOSTIC,     2, -8.772728443146e-01, 1.797693134862e+308, 4.5568e+04, 5.1200e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0003.nii.gz
+1DIAGNOSTIC,     3, -8.788022994995e-01, 1.797693134862e+308, 5.0560e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0004.nii.gz
+1DIAGNOSTIC,     4, -8.802283406258e-01, 1.797693134862e+308, 5.5424e+04, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0005.nii.gz
+1DIAGNOSTIC,     5, -8.816816806793e-01, 1.797693134862e+308, 6.0288e+04, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0006.nii.gz
+1DIAGNOSTIC,     6, -8.832867145538e-01, 1.797693134862e+308, 6.5280e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0007.nii.gz
+1DIAGNOSTIC,     7, -8.846269249916e-01, 1.797693134862e+308, 7.0144e+04, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0008.nii.gz
+1DIAGNOSTIC,     8, -8.857666254044e-01, 1.797693134862e+308, 7.5008e+04, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0009.nii.gz
+1DIAGNOSTIC,     9, -8.869338631630e-01, 1.797693134862e+308, 7.9872e+04, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0010.nii.gz
+1DIAGNOSTIC,    10, -8.879562020302e-01, 8.900538086891e-04, 8.4864e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0011.nii.gz
+1DIAGNOSTIC,    11, -8.888306021690e-01, 7.752403616905e-04, 8.9856e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0012.nii.gz
+1DIAGNOSTIC,    12, -8.896425366402e-01, 6.635412573814e-04, 9.4848e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0013.nii.gz
+1DIAGNOSTIC,    13, -8.903701305389e-01, 5.647540092468e-04, 9.9840e+04, 4.9920e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0014.nii.gz
+1DIAGNOSTIC,    14, -8.910569548607e-01, 4.770457744598e-04, 1.0470e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0015.nii.gz
+1DIAGNOSTIC,    15, -8.917112350464e-01, 4.021450877190e-04, 1.0957e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0016.nii.gz
+1DIAGNOSTIC,    16, -8.923494815826e-01, 3.444850444794e-04, 1.1443e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0017.nii.gz
+1DIAGNOSTIC,    17, -8.929555416107e-01, 2.984814345837e-04, 1.1930e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0018.nii.gz
+1DIAGNOSTIC,    18, -8.935283422470e-01, 2.603121101856e-04, 1.2416e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0019.nii.gz
+1DIAGNOSTIC,    19, -8.940910696983e-01, 2.310611307621e-04, 1.2902e+05, 4.8640e+03, 
+*/mnt/lustre/mathdugre/fast-interpolate/datasets/ds004513/derivatives/flint/antsRegistration/r7-p23/sub-s030/Stage3_level4_Iter0020.nii.gz
+1DIAGNOSTIC,    20, -8.946326375008e-01, 2.082027494907e-04, 1.3402e+05, 4.9920e+03, 
+  Elapsed time (stage 2): 1.394e+05
+
+
+Total elapsed time: 1.445e+05
