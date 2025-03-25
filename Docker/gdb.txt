@@ -1,0 +1,9 @@
+docker run --rm -it -v $PWD/data:/data --entrypoint="bash" ants:vprec-no-metric-debug
+
+export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=$(nproc)
+export VFC_BACKENDS="libinterflop_vprec.so --range-binary32=8 --precision-binary32=7 --range-binary64=8 --precision-binary64=7"
+gdb antsRegistration
+rbreak ThreadedGenerateDataForFitting
+b itkBSplineScatteredDataPointSetToImageFilter.hxx:619
+
+r --verbose 1 --dimensionality 3 --collapse-output-transforms 0 --use-histogram-matching 0 --winsorize-image-intensities [0.005,0.995] --interpolation Linear --random-seed 1 --output [/data/,/data/Warped.nii.gz] --transform Rigid[0.1] --metric MI[/data/template.nii.gz,/data/moving.nii.gz,1,32,Regular,0.25] --convergence [25,1e-6,10] --shrink-factors 8 --smoothing-sigmas 3vox

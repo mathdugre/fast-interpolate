@@ -81,7 +81,6 @@ RUN : \
     -DRUN_LONG_TESTS=OFF \
     -DRUN_SHORT_TESTS=ON \
     -DCMAKE_INSTALL_PREFIX=/opt/ants \
-    -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DCMAKE_C_COMPILER=verificarlo-c \
     -DCMAKE_CXX_COMPILER=verificarlo-c++ \
     -DCMAKE_C_FLAGS="--verbose --exclude-file=/tmp/vprec-exclude.txt" \
